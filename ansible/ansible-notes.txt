@@ -1,0 +1,4 @@
+https://docs.ansible.com/ansible/latest/plugins/plugins.html
+Plugins - Plugins are pieces of code that augment Ansible's core functionality
+
+Callbacks - Callback plugins enable adding new behaviors to Ansible when responding to events.

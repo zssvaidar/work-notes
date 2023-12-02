@@ -1,0 +1,58 @@
+adduser <user>
+> pwd
+> pwd
+
+usermod -aG sudo <user>
+add user to sudo group
+
+
+
+Создаем контейнер
+создаем пользователя
+устанавливаем пакеты под данным пользователем
+
+
+
+After creating container
+ - start working on container:
+    install packaages
+    configure projects
+
+Making a template from exising container
+ - delete all dependencies, before making a new template from container
+    sudo apt clean
+    sudo apt autoremove
+
+ - cat /etc/machine-id
+  sudo truncate -s 0 /etc/machine-id
+
+After running template 
+ - delete all `old` host ssh_host_*
+    cd /etc/ssh/ | sudo rm ssh_host_* 
+
+    sudo dpkg-reconfigure openssh-server 
+ip a
+adduser <user>
+cat /etc/passwd
+
+
+Pam users can ssh into the server and work on it
+proxmox user can manage interface
+
+pam realm - users can ssh into the server
+pve realm - manages vm's via gui
+
+
+
+(1) Готовим контейнер #1
+[] Создал контейнер root + (задал новый password)
+[] удаляем конфиги /etc/ssh_host_*
+[] Делаем темплейт
+[] Заходим, 
+  * создаем нового юзера <user1>
+  * dpkg-reconfigure openssh-server
+  * отдаем доступы к контейнеру <user1>
+
+(2) Готовим контейнер nodejs
+Используем контейнер (#1) -> юзерром <ops9>
+
