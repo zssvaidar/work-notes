@@ -1,0 +1,41 @@
+jira-cicd-integration
+ - ticked based cicd automation 
+   * https://www.atlassian.com/devops/imagelabeller-intro/jira-cicd-integration
+
+teamcity
+ cons: hydrid build options
+   * https://www.youtube.com/watch?v=zqi4fDF-S60
+
+
+
+Version of Teamcity
+https://download.jetbrains.com/teamcity/TeamCity-2023.11.tar.gz
+
+Installtion guide
+https://garywoodfine.com/how-to-install-team-city-10-x-on-ubuntu-16-x/
+
+Server require storage database
+it contains 148 tables
+
+All teamcity server data stored in, can be used to purge everything
+/home/aid/.BuildServer
+
+Положить сервер
+> TeamCity/bin/shutdown.sh
+
+Поднять сервер
+> TeamCity/bin/teamcity-server.sh start
+
+
+Installation Jenkins
+https://pkg.jenkins.io/debian-stable/
+
+При возникначений ощибки:
+  Пожалуйста, подождите, пока Дженкинс перезапустится - долгое ожидание
+  делаем рестарт службы, 
+  * делаем sudo systemctl stop jenkins.service
+  После того как конфигуратор загрузился если он потребует КОД берем его из
+  * journalctl -xeu jenkins.service
+
+Уставнока плагинов Jenkins
+  пока не важно устанавливаем дефолтгые конфиги

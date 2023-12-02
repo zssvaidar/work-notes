@@ -50,6 +50,7 @@ pve realm - manages vm's via gui
 [] Делаем темплейт
 [] Заходим, 
   * создаем нового юзера <user1>
+  * usermod -a -G sudo <user1> если требуется чтобы юзер имел доступ к линух коммандам
   * dpkg-reconfigure openssh-server
   * отдаем доступы к контейнеру <user1>
 
