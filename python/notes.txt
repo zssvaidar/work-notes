@@ -1,0 +1,24 @@
+
+
+sudo apt update
+sudo apt install python3-pip
+sudo apt install python3-venv
+sudo apt install pkg-config
+sudo apt install default-libmysqlclient-dev
+
+nano /usr/share/doc/python3.11/README.venv
+
+$ mkdir -p ~/.venvs
+$ python3 -m venv ~/.venvs/foo
+$ ~/.venvs/foo/bin/python -m pip install foo
+
+
+pip3 install --upgrade virtualenv
+
+virtualenv -p python3 myenv
+
+source myenv/bin/activate
+
+pip install -r requirements.txt
+
+chmod +x 

@@ -27,6 +27,13 @@ All teamcity server data stored in, can be used to purge everything
 Поднять сервер
 > TeamCity/bin/teamcity-server.sh start
 
+Build & Deployment instructions
+https://www.jetbrains.com/help/teamcity/deployment-build-configuration.html#Example
+https://www.jetbrains.com/help/teamcity/deployment-build-configuration.html
+
+Teamcity has `Build configuration` tab inside of it we can add option like `Deployment configuration`
+so deployment step is part of `build configuration` and can be added to chain via `Build Steps` by keyword 
+  `deploy` [ Container Deployer, FTP Upload, SMB Upload, SSH Upload ]
 
 Installation Jenkins
 https://pkg.jenkins.io/debian-stable/
