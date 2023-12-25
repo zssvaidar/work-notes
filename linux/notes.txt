@@ -23,3 +23,15 @@ sudo systemctl restart nginx
 
 nslookup bunhydrate.bun
 sudo nano /etc/hosts
+
+# user no password
+sudo adduser dev --disabled-password
+sudo passwd -d dev
+
+
+ln -s -T /home/dev/pimd/t_modules/main dpim
+
+
+change user inside of
+sudo nano /etc/nginx/nginx.conf
+sudo nano /etc/php/8.1/fpm/pool.d/www.conf
