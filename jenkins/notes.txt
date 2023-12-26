@@ -1,0 +1,4 @@
+java -jar jenkins-cli.jar -s http://localhost:8080 -auth aidar_zssv:aa18aa01 install-plugin locale:314.v22ce953dfe9e
+
+https://www.jenkins.io/solutions/php/
+

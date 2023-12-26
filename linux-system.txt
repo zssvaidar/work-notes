@@ -1,0 +1,21 @@
+
+In Linux, a "run file" generally refers to a script or program that
+is used to start or stop a specific service or application. These files
+are often referred to as "init scripts" because they are typically used
+to manage the initialization and shutdown of various system processes.
+
+/etc/service
+
+create init script
+/etc/init.d/myscripts/myservice
+
+add init script into register
+/etc/systemd/system/myservice.service
+
+
+for debian use to add services
+/etc/services
+learn how to register new service
+
+
+sv
