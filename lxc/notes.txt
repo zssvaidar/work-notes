@@ -1,3 +1,11 @@
 lxc-create -t download -n dbc_1 -- --dist debian --release buster --arch amd64
 lxc-create -t download -n dbc_1 -- --dist debian --release buster --arch amd64 --path lxc
 lxc-start -n dbc_1 -F
+
+
+sudo snapd insatll lxd
+sudo lxd init 
+lxc remote list
+dir
+lxc launch images:debian/11 dbc-1
+
